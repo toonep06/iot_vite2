@@ -77,7 +77,7 @@ const LoginPage = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('/api/auth/login', {
+      const response = await axios.post('https://www.blinkemerge.app/api/auth/login', {
         username: username,
         password: password,
       });
